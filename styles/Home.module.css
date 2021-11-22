@@ -1,0 +1,7 @@
+.container {
+  @apply p-0;
+}
+
+.main {
+  @apply flex flex-col items-center justify-center min-h-screen bg-gray-900;
+}

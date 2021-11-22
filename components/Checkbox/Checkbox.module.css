@@ -1,0 +1,15 @@
+.CheckboxContainer {
+  @apply flex p-1 my-0 text-gray-900 lg:items-center;
+}
+
+.CheckBox {
+  @apply flex items-center justify-center w-6 h-6 bg-white border border-gray-600 rounded-md shadow opacity-95 focus:opacity-100;
+}
+
+.CheckboxIndicator {
+  @apply text-green-500;
+}
+
+.CheckBoxLabel {
+  @apply pl-3 font-mono text-lg text-gray-900 cursor-pointer select-none;
+}
