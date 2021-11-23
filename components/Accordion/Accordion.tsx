@@ -10,7 +10,7 @@ const AccordionDemo = () => (
       <Accordion.Item value="item-1" className={s.Item}>
         <Accordion.Header className={s.Header}>
           <Accordion.Trigger className={s.Trigger}>
-            <span>Trigger text</span>
+            <span>Accordion</span>
             <ChevronDownIcon aria-hidden className={s.Icon}/>
           </Accordion.Trigger>
         </Accordion.Header>
@@ -19,7 +19,7 @@ const AccordionDemo = () => (
       <Accordion.Item value="item-2" className={s.Item}>
         <Accordion.Header className={s.Header}>
           <Accordion.Trigger className={s.Trigger}>
-            <span>Trigger text2</span>
+            <span>Accordion</span>
             <ChevronDownIcon aria-hidden className={s.Icon}/>
           </Accordion.Trigger>
         </Accordion.Header>

@@ -47,3 +47,23 @@ a {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+
+
+/* Turn on custom 8px wide scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* 1px wider than Lion. */
+  /* This is more usable for users trying to click it. */
+  /*-webkit-border-radius: 100px;*/
+}
+/* hover effect for both scrollbar area, and scrollbar 'thumb' */
+::-webkit-scrollbar:hover {
+  @apply bg-white bg-opacity-90;
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-gray-900;
+}

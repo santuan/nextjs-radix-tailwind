@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { BsDot } from "react-icons/bs";
 import Tabs from '../components/Tabs';
 import Slider from '../components/Slider';
 import Checkbox from '../components/Checkbox/Checkbox';
@@ -21,37 +22,132 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className="mb-12 font-mono text-3xl text-white">Radix components with Tailwind CSS Modules</h1>
-        <div className="grid w-full grid-cols-3 gap-3 px-6 mx-auto max-w-7xl">
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
+        <h1 className="my-2 font-mono text-3xl text-white">
+          <a href="https://www.radix-ui.com/" target="_blank">
+            Radix UI
+          </a>
+          {" "}with{" "}
+          <a href="https://www.radix-ui.com/https://tailwindcss.com/" target="_blank">
+            Tailwind 
+          </a>
+        </h1>
+        <div className="flex items-center justify-center mb-6 space-x-6 text-white">
+          <span>Next.js</span>
+          <span>CSS Modules</span>
+          <span>Typography</span>
+          <span>React-icons</span>
+        </div>
+        <div className="grid w-full px-6 mx-auto md:grid-cols-2 lg:grid-cols-3 gap-9 max-w-7xl">
+          <div className={styles.HomeItem}>
             <Accordion />
+            <div className={styles.links}>
+              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/accordion">
+                Documentation
+              </a>
+              <BsDot />
+              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Accordion">
+                See Template
+              </a>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
+          <div className={styles.HomeItem}>
             <ContextMenu />
+            <div className={styles.links}>
+              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/accordion">
+                Documentation
+              </a>
+              <BsDot />
+              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/ContextMenu">
+                See Template
+              </a>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-start w-full mx-auto overflow-hidden bg-gray-200 shadow-2xl rounded-xl">
-            <Tabs />
-          </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
-            <Slider />
-          </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
+          <div className={styles.HomeItem}>
             <Dialog />
+            <div className={styles.links}>
+              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/dialog">
+                Documentation
+              </a>
+              <BsDot />
+              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Dialog">
+                See Template
+              </a>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
+          <div className={styles.HomeItem}>
+            <Slider />
+            <div className={styles.links}>
+              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/slider">
+                Documentation
+              </a>
+              <BsDot />
+              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Slider">
+                See Template
+              </a>
+            </div>
+          </div>
+          <div className={styles.HomeItem}>
+            <Tabs />
+            <div className={styles.links}>
+              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/tabs">
+                Documentation
+              </a>
+              <BsDot />
+              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Tabs">
+                See Template
+              </a>
+            </div>
+          </div>
+          <div className={styles.HomeItem}>
             <HoverCard />
+            <div className={styles.links}>
+              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/hover-card">
+                Documentation
+              </a>
+              <BsDot />
+              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/HoverCard">
+                See Template
+              </a>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
+          <div className={styles.HomeItem}>
             <Checkbox />
+            <div className={styles.links}>
+              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/checkbox">
+                Documentation
+              </a>
+              <BsDot />
+              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Checkbox">
+                See Template
+              </a>
+            </div>
           </div>
-          
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
+          <div className={styles.HomeItem}>
             <Popover />
+            <div className={styles.links}>
+              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/popover">
+                Documentation
+              </a>
+              <BsDot />
+              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Popover">
+                See Template
+              </a>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
+          <div className={styles.HomeItem}>
             <ToggleGroup />
+            <div className={styles.links}>
+              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/toggle-group">
+                Documentation
+              </a>
+              <BsDot />
+              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/ToggleGroup">
+                See Template
+              </a>
+            </div>
           </div>
         </div>
+        
       </main >
 
     </div >

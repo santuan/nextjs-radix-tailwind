@@ -1,27 +1,28 @@
 .Root {
-  @apply flex flex-col w-full shadow-sm;
+  @apply flex flex-col w-full bg-white shadow-sm;
 }
 
 .List {
   flex-shrink: 0;
   @apply flex;
 }
+
 .Trigger {
   all: unset;
   flex: 1;
   border-bottom: 2px solid transparent;
-  @apply flex items-center justify-center px-5 py-2 font-mono text-xl text-gray-900 duration-300 cursor-pointer hover:bg-green-300;
+  @apply flex items-center justify-center px-5 py-2 font-mono text-xl text-gray-900 duration-300 cursor-pointer hover:bg-indigo-300;
 }
-.Trigger[data-state="active"] {
-  @apply text-green-900 border-green-900;
 
+.Trigger[data-state="active"] {
+  @apply text-indigo-900 border-transparent;
 }
 
 .Trigger[data-state="inactive"] {
-  @apply bg-gray-300 opacity-50;
+  @apply text-gray-600 bg-gray-300 opacity-90 hover:bg-indigo-400 hover:text-indigo-700;
 }
 
 .Content {
   flex: 1;
-  @apply p-5 duration-700 bg-gray-100 outline-none rounded-b-md focus:shadow-2xl;
+  @apply p-5 duration-700 bg-gray-100 outline-none rounded-b-md focus:shadow-xl;
 }
