@@ -1,3 +1,13 @@
+## Radix UI and Tailwind CSS
+
+Example made with:
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Css Modules](https://github.com/css-modules/css-modules)
+- [Tailwind typography](https://github.com/tailwindlabs/tailwindcss-typography)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Font Source](https://fontsource.org/fonts)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

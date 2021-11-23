@@ -120,7 +120,6 @@ export const ContextMenuDemo = () => {
     <Box>
       <ContextMenu>
         <ContextMenuTrigger>
-          <h2 className="mb-2 font-mono font-bold text-center">Context Menu</h2>
           <Instruction>Right click in here.</Instruction>
         </ContextMenuTrigger>
         <ContextMenuContent sideOffset={5} >

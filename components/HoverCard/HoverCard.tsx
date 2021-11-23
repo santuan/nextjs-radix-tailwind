@@ -4,7 +4,6 @@ import { CgProfile } from "react-icons/cg";
 const HoverCardComponent = () => {
   return (
     <div className={s.Container}>
-      <h2 className="mb-2 text-xl font-bold opacity-50 font-title">Hover Card</h2>
       <HoverCard.Root >
         <HoverCard.Trigger asChild>
           <div className={s.Trigger} >

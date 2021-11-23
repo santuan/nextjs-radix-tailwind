@@ -48,10 +48,12 @@ const Home: NextPage = () => {
           <span>Awesome Radix accessibility out of the box.</span>
           <span>Press Tab to start and enter to interact :)</span>
         </div>
-        <div className="grid w-full px-6 mx-auto md:grid-cols-2 lg:grid-cols-3 gap-9 max-w-7xl">
+        <div className="grid w-full px-6 mx-auto md:grid-cols-2 xl:grid-cols-3 gap-9 max-w-7xl">
           <div className={styles.HomeItem}>
             <Accordion />
             <div className={styles.links}>
+              <p>Accordion</p>
+              <BsDot />
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -73,6 +75,8 @@ const Home: NextPage = () => {
             <ContextMenu />
             <span className="lg:hidden">Desktop only</span>
             <div className={styles.links}>
+              <p>ContextMenu</p>
+              <BsDot />
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -93,6 +97,8 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <Dialog />
             <div className={styles.links}>
+              <p>Dialog</p>
+              <BsDot />
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -113,6 +119,8 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <Slider />
             <div className={styles.links}>
+              <p>Slider</p>
+              <BsDot />
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -133,6 +141,8 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <Tabs />
             <div className={styles.links}>
+              <p>Tabs</p>
+              <BsDot />
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -153,6 +163,8 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <HoverCard />
             <div className={styles.links}>
+              <p>HoverCard</p>
+              <BsDot />
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -173,6 +185,8 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <Checkbox />
             <div className={styles.links}>
+              <p>Checkbox</p>
+              <BsDot />
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -193,6 +207,8 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <Popover />
             <div className={styles.links}>
+              <p>Popover</p>
+              <BsDot />
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -213,6 +229,8 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <ToggleGroup />
             <div className={styles.links}>
+              <p>Toggle Group</p>
+              <BsDot />
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -246,8 +264,11 @@ const Home: NextPage = () => {
         </blockquote>
 
       </article>
-      <div className="flex items-center justify-center w-full py-24 font-mono text-white bg-gray-800">
-        Thanks to all the libraries that made this possible.
+      <div className="flex flex-col items-center justify-center w-full py-24 font-mono text-white bg-gray-800">
+        <p>Thanks to all the libraries that made this possible.</p>
+        <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/santuan/nextjs-radix-tailwind" className="mt-2 font-bold">Github repo</a>
       </div>
     </div>
   );

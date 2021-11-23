@@ -20,7 +20,11 @@
 
 .links {
   @apply absolute bottom-0 left-0 right-0 z-10 w-full;
-  @apply flex items-center justify-center p-3 space-x-3 font-bold bg-indigo-100 font-title;
+  @apply flex items-center justify-between p-3 px-6 space-x-3 font-bold bg-indigo-100 font-title;
+}
+
+.links p {
+  @apply text-sm text-gray-700;
 }
 
 .links a {
