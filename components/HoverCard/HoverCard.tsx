@@ -101,7 +101,7 @@ const HoverCardComponent = () => {
     <HoverCard>
       <HoverCardTrigger asChild>
         <ImageTrigger href="https://twitter.com/radix_ui" target="_blank" rel="noreferrer noopener">
-          <Img src="https://tailwindcss.com/_next/static/media/sarah-dayan.a8ff3f1095a58085a82e3bb6aab12eb2.jpg" />
+          <Img className="object-cover object-center" src="https://tailwindcss.com/_next/static/media/sarah-dayan.a8ff3f1095a58085a82e3bb6aab12eb2.jpg" />
           Hover Card
         </ImageTrigger>
       </HoverCardTrigger>
