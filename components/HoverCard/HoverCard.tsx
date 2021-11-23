@@ -7,10 +7,10 @@ const HoverCardComponent = () => {
       <h2 className="mb-2 text-xl font-bold opacity-50 font-title">Hover Card</h2>
       <HoverCard.Root >
         <HoverCard.Trigger asChild>
-          <a className={s.Trigger} href="https://twitter.com/radix_ui" target="_blank" rel="noreferrer noopener">
+          <div className={s.Trigger} >
             {/* <img  src="https://tailwindcss.com/_next/static/media/sarah-dayan.a8ff3f1095a58085a82e3bb6aab12eb2.jpg" /> */}
             <CgProfile className={s.ImageTrigger} />
-          </a>
+          </div>
         </HoverCard.Trigger>
         <HoverCard.Content className={s.Content}>
           <div className="flex flex-col ">

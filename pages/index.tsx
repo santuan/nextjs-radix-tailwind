@@ -54,6 +54,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.HomeItem}>
             <ContextMenu />
+            <span className="lg:hidden">Desktop only</span>
             <div className={styles.links}>
               <a target="_blank" rel="noopener noreferrer" href="https://www.radix-ui.com/docs/primitives/components/accordion">
                 Documentation
