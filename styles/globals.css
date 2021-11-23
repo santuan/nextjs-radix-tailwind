@@ -51,7 +51,7 @@ a {
 
 /* Turn on custom 8px wide scrollbar */
 ::-webkit-scrollbar {
-  width: 6px; /* 1px wider than Lion. */
+  width: 8px; /* 1px wider than Lion. */
   /* This is more usable for users trying to click it. */
   /*-webkit-border-radius: 100px;*/
 }
@@ -61,9 +61,9 @@ a {
 }
 
 *::-webkit-scrollbar-track {
-  @apply bg-gray-100;
+  @apply bg-indigo-100;
 }
 
 *::-webkit-scrollbar-thumb {
-  @apply bg-gray-900;
+  @apply bg-gradient-to-b from-indigo-600 via-indigo-600 to-indigo-900;
 }

@@ -11,7 +11,7 @@
   all: unset;
   flex: 1;
   border-bottom: 2px solid transparent;
-  @apply flex items-center justify-center px-5 py-2 font-mono text-xl text-gray-900 duration-300 cursor-pointer hover:bg-indigo-300;
+  @apply flex items-center justify-center px-5 py-2 text-xl text-gray-900 duration-300 cursor-pointer font-title hover:bg-indigo-300;
 }
 
 .Trigger[data-state="active"] {

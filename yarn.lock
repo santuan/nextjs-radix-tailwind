@@ -87,6 +87,26 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/archivo-narrow@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/archivo-narrow/-/archivo-narrow-4.5.1.tgz#9feb86db47c7e4b3853cde0ff284bddf0d119021"
+  integrity sha512-x6dHBDy4BjCK8mfHXn1ubDr/7RSq6SO/f+VTnMIiOSFyyw9Ut1kQrkUOKridCum1g5Nz9a3njN0zWJ3QRZ2RaA==
+
+"@fontsource/archivo@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/archivo/-/archivo-4.5.1.tgz#bf6968406ccb7c7471178eee59aedeee8570d42d"
+  integrity sha512-jHxjrKlOttxDD8tzHSt6pAzKI1z/r6O/9krbGE/D0JnXhF7LEZ7M++TJyyc+eIjr3Mqmi8tRvB4D4rxmqIcexg==
+
+"@fontsource/space-grotesk@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/space-grotesk/-/space-grotesk-4.5.0.tgz#abb226d0a03fb0b733cd4f0c87bc8a08c0a1d215"
+  integrity sha512-Kdnq5m31DsJ8l/VCpZGz4QpIxLLvNVh4MyVGY0PmDh7aY9aM5rmO2NF49dJ0749gLPgMW6Moc/xjgW95G0MbMg==
+
+"@fontsource/space-mono@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/space-mono/-/space-mono-4.5.0.tgz#634cb042d570f9341f4449c6bf0b4c57c562c0c2"
+  integrity sha512-1tzGlLH2N/k1sovGSA4s7MpIRMciKeJbXKfdrKc1H84lg1FPcmiYGYdWiQA5MoQyjF6Bqx+IWpyIcOktMKvViA==
+
 "@hapi/accept@5.0.2":
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/@hapi/accept/-/accept-5.0.2.tgz#ab7043b037e68b722f93f376afb05e85c0699523"

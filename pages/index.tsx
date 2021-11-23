@@ -22,20 +22,22 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className="my-2 font-mono text-3xl text-white">
-          <a href="https://www.radix-ui.com/" target="_blank" rel="noopener noreferrer">
+        <h1 className="my-2 text-3xl text-white font-title">
+          <a className="underline duration-300 hover:text-gray-400" href="https://www.radix-ui.com/" target="_blank" rel="noopener noreferrer">
             Radix UI
           </a>
-          {" "}with{" "}
-          <a href="https://www.radix-ui.com/https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
-            Tailwind 
+          {" "}&{" "}
+          <a className="underline duration-300 hover:text-gray-400" href="https://www.radix-ui.com/https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
+            Tailwind CSS
           </a>
         </h1>
-        <div className="flex items-center justify-center mb-6 space-x-6 text-white">
+        <div className={styles.tags}>
           <span>Next.js</span>
           <span>CSS Modules</span>
+          <span>Keyboard Navigation</span>
           <span>Typography</span>
-          <span>React-icons</span>
+          <span>React Icons</span>
+          <span>Font Source</span>
         </div>
         <div className="grid w-full px-6 mx-auto md:grid-cols-2 lg:grid-cols-3 gap-9 max-w-7xl">
           <div className={styles.HomeItem}>
@@ -147,8 +149,10 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        
       </main >
+      <div className="flex items-center justify-center w-full py-24 font-mono text-white bg-gray-800">
+        Thanks to all the libraries that made this possible.
+      </div>
 
     </div >
   )

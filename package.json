@@ -8,6 +8,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/archivo": "^4.5.1",
+    "@fontsource/archivo-narrow": "^4.5.1",
+    "@fontsource/space-grotesk": "^4.5.0",
+    "@fontsource/space-mono": "^4.5.0",
     "@modulz/radix-icons": "^4.0.0",
     "@radix-ui/colors": "^0.1.7",
     "@radix-ui/react-accordion": "^0.1.1",

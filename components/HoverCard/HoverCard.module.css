@@ -26,10 +26,10 @@
 }
 
 .Trigger {
-  @apply flex flex-col items-center justify-center w-12 h-12 overflow-hidden rounded-full cursor-pointer focus:shadow-xl;
+  @apply flex flex-col items-center justify-center w-10 h-10 overflow-hidden duration-300 bg-indigo-700 rounded-full cursor-pointer focus:shadow-xl hover:bg-indigo-900;
 }
 
 .ImageTrigger {
   all: unset;
-  @apply block object-cover object-center w-full h-full rounded-full;
+  @apply block text-2xl text-indigo-100 rounded-full;
 }

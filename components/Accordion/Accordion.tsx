@@ -24,7 +24,7 @@ const AccordionDemo = () => (
             <ChevronDownIcon aria-hidden className={s.Icon} />
           </Accordion.Trigger>
         </Accordion.Header>
-        <Accordion.Content className={s.Content}>Yes. It's unstyled by default, giving you freedom over the look and feel.
+        <Accordion.Content className={s.Content}>Yes. It&apos;s unstyled by default, giving you freedom over the look and feel.
 
         </Accordion.Content>
       </Accordion.Item>
