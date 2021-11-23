@@ -22,7 +22,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <header className="top-0 left-0 right-0 z-50 flex flex-col items-center justify-between w-full px-6 py-3 bg-gray-900 md:flex-row lg:fixed bg-opacity-90" style={{ backdropFilter: 'blur(5px)' }}>
+        <header
+          className="top-0 left-0 right-0 z-50 flex flex-col items-center justify-between w-full px-6 py-3 bg-gray-900 md:flex-row lg:fixed bg-opacity-90"
+          style={{ backdropFilter: "blur(5px)" }}
+        >
           <h1 className="my-2 text-3xl text-white font-title">
             <a
               className="underline duration-300 hover:text-gray-400"
@@ -44,9 +47,19 @@ const Home: NextPage = () => {
           </h1>
           <HomeTags />
         </header>
-        <div className="flex-col hidden pt-24 my-6 font-mono text-center text-white lg:flex">
+        <div className="flex-col hidden pt-24 my-6 font-sans text-center text-white lg:flex">
           <span>Awesome Radix accessibility out of the box.</span>
-          <span>Press Tab to start and enter to interact :)</span>
+          <span>
+            Press <code className="inline-flex px-1 mx-1 font-mono text-sm font-bold text-indigo-900 uppercase bg-indigo-100 rounded-md bg-opacity-80">Tab</code> on the
+            Keyboard to start and{" "}
+
+            <code className="inline-flex px-1 mx-1 font-mono text-sm font-bold text-indigo-900 uppercase bg-indigo-100 rounded-md bg-opacity-80">space</code>
+            or
+            <code className="inline-flex px-1 mx-1 font-mono text-sm font-bold text-indigo-900 uppercase bg-indigo-100 rounded-md bg-opacity-80">enter</code>
+
+            to
+            interact :)
+          </span>
         </div>
         <div className="grid w-full px-6 mx-auto md:grid-cols-2 xl:grid-cols-3 gap-9 max-w-7xl">
           <div className={styles.HomeItem}>
@@ -251,24 +264,35 @@ const Home: NextPage = () => {
         </div>
       </main>
       <article className={styles.typography}>
-        <a href="https://github.com/tailwindlabs/tailwindcss-typography"
+        <a
+          href="https://github.com/tailwindlabs/tailwindcss-typography"
           target="_blank"
-          rel="noopener noreferrer" className="font-mono text-xl font-bold text-indigo-600 hover:text-gray-900">Tailwind Typography</a>
+          rel="noopener noreferrer"
+          className="font-mono text-xl font-bold text-indigo-600 hover:text-gray-900"
+        >
+          Tailwind Typography
+        </a>
         <h3>Typography should be easy</h3>
-        <p>Something a wise person once said about typography is:</p>
         <blockquote>
           <p>
-            Ants and butterflies. An idea to establish the possible paths for the design of fonts. The &quot;typographic ants&quot; are in charge of the painstaking and laborious task of making a text legible, a very useful work, but imperceptible to the eyes of the reader. On the other hand, the display of &quot;typographic butterflies&quot; deliberately manifests their fullness and forms on a large scale.
+            Ants and butterflies. An idea to establish the possible paths for the design of fonts. The &quot;typographic
+            ants&quot; are in charge of the painstaking and laborious task of making a text legible, a very useful work,
+            but imperceptible to the eyes of the reader. On the other hand, the display of &quot;typographic
+            butterflies&quot; deliberately manifests their fullness and forms on a large scale.
           </p>
           <p>An idea by Luis Siquot </p>
         </blockquote>
-
       </article>
       <div className="flex flex-col items-center justify-center w-full py-24 mt-24 font-mono text-white bg-gray-800">
         <p>Thanks to all the libraries that made this possible.</p>
-        <a target="_blank"
+        <a
+          target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/santuan/nextjs-radix-tailwind" className="mt-2 font-bold">Github repo</a>
+          href="https://github.com/santuan/nextjs-radix-tailwind"
+          className="mt-2 font-bold"
+        >
+          Github repo
+        </a>
       </div>
     </div>
   );
