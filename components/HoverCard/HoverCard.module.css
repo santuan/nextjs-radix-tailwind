@@ -3,7 +3,7 @@
 }
 
 .Content {
-  @apply p-6 transition-all bg-white rounded-md shadow-md w-96;
+  @apply w-full max-w-xs p-6 transition-all bg-white border-b-4 border-indigo-500 rounded-md shadow-md;
 }
 
 .Content[data-state="open"] {

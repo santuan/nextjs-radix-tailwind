@@ -9,12 +9,13 @@
 .HomeItem {
   @apply relative flex flex-col items-center justify-center w-full p-4 pb-16 mx-auto overflow-hidden duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl;
 }
+
 .tags {
-  @apply flex flex-wrap items-center justify-center mb-6;
+  @apply flex flex-wrap items-center justify-center;
 }
 
 .tags span {
-  @apply px-3 py-1 mr-2 text-sm font-bold text-gray-100 uppercase bg-gray-300 rounded bg-opacity-10 font-title;
+  @apply px-3 py-1 mb-2 mr-2 text-sm font-bold text-gray-100 uppercase bg-gray-300 rounded bg-opacity-10 font-title;
 }
 
 .links {
@@ -25,3 +26,12 @@
 .links a {
   @apply text-sm text-indigo-700 hover:text-indigo-900;
 }
+
+.typography {
+  @apply p-6 mx-auto prose-sm prose bg-white lg:prose-lg prose-indigo xl:prose-xl 2xl:prose-2xl;
+}
+
+.typography h3 {
+  @apply font-title;
+}
+
