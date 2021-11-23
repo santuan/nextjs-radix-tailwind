@@ -32,14 +32,24 @@
 }
 
 .typography {
-  @apply p-6 mx-auto prose-sm prose bg-white lg:prose-lg prose-indigo xl:prose-xl 2xl:prose-2xl;
+  @apply p-6 mx-auto bg-white;
+  @apply  prose lg:prose-lg prose-indigo xl:prose-xl;
 }
 
-.typography blockquote {
-  @apply font-serif;
+.typography blockquote p {
+  font-family: "Alegreya", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@supports (font-variation-settings: normal) {
+  .typography blockquote p {
+    font-family: "Alegreya";
+    font-variation-settings: "wght" 500;
+    font-variation-settings: "ital" 1;
+  }
 }
 
 .typography h3 {
   @apply font-title;
 }
-

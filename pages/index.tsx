@@ -280,7 +280,7 @@ const Home: NextPage = () => {
             but imperceptible to the eyes of the reader. On the other hand, the display of &quot;typographic
             butterflies&quot; deliberately manifests their fullness and forms on a large scale.
           </p>
-          <p>An idea by Luis Siquot </p>
+          <p>An idea by Luis Siquot</p>
         </blockquote>
       </article>
       <div className="flex flex-col items-center justify-center w-full py-24 mt-24 font-mono text-white bg-gray-800">
