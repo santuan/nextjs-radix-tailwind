@@ -32,7 +32,7 @@ const Home: NextPage = () => {
             >
               Radix UI
             </a>{" "}
-            &{" "}
+            with{" "}
             <a
               className="underline duration-300 hover:text-gray-400"
               href="https://tailwindcss.com/"
@@ -264,7 +264,7 @@ const Home: NextPage = () => {
         </blockquote>
 
       </article>
-      <div className="flex flex-col items-center justify-center w-full py-24 font-mono text-white bg-gray-800">
+      <div className="flex flex-col items-center justify-center w-full py-24 mt-24 font-mono text-white bg-gray-800">
         <p>Thanks to all the libraries that made this possible.</p>
         <a target="_blank"
           rel="noopener noreferrer"

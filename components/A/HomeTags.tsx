@@ -5,8 +5,8 @@ import * as HoverCard from '@radix-ui/react-hover-card';
 const HomeTags = () => {
   return (
     <div className={a.tags}>
-      <b className="mb-2 mr-3 font-mono text-sm text-gray-400 uppercase">made with</b>
-      <HoverCard.Root >
+      <b className="mb-2 mr-3 font-mono text-sm text-gray-400 uppercase">made in</b>
+      <HoverCard.Root openDelay={300} closeDelay={300}>
         <HoverCard.Trigger asChild>
           <span>Next.js</span>
         </HoverCard.Trigger>
@@ -24,7 +24,7 @@ const HomeTags = () => {
           <HoverCard.Arrow className={s.Arrow} />
         </HoverCard.Content>
       </HoverCard.Root>
-      <HoverCard.Root >
+      <HoverCard.Root openDelay={300} closeDelay={300}>
         <HoverCard.Trigger asChild>
           <span>CSS Modules</span>
         </HoverCard.Trigger>
@@ -43,7 +43,7 @@ const HomeTags = () => {
           <HoverCard.Arrow className={s.Arrow} />
         </HoverCard.Content>
       </HoverCard.Root>
-      <HoverCard.Root >
+      <HoverCard.Root openDelay={300} closeDelay={300}>
         <HoverCard.Trigger asChild>
           <span>Typography</span>
         </HoverCard.Trigger>
@@ -61,7 +61,7 @@ const HomeTags = () => {
           <HoverCard.Arrow className={s.Arrow} />
         </HoverCard.Content>
       </HoverCard.Root>
-      <HoverCard.Root >
+      <HoverCard.Root openDelay={300} closeDelay={300}>
         <HoverCard.Trigger asChild>
           <span>React Icons</span>
         </HoverCard.Trigger>
@@ -79,7 +79,7 @@ const HomeTags = () => {
           <HoverCard.Arrow className={s.Arrow} />
         </HoverCard.Content>
       </HoverCard.Root>
-      <HoverCard.Root >
+      <HoverCard.Root openDelay={300} closeDelay={300}>
         <HoverCard.Trigger asChild>
           <span>Font Source</span>
         </HoverCard.Trigger>
@@ -94,7 +94,7 @@ const HomeTags = () => {
               Self-host Open Source fonts in neatly bundled NPM packages.
             </p>
           </div>
-          <HoverCard.Arrow className={s.Arrow} />
+          <HoverCard.Arrow className={s.Arrow} offset={10} />
         </HoverCard.Content>
       </HoverCard.Root>
     </div>

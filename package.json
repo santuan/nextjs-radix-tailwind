@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/alegreya": "^4.5.0",
     "@fontsource/archivo": "^4.5.1",
     "@fontsource/archivo-narrow": "^4.5.1",
     "@fontsource/space-grotesk": "^4.5.0",

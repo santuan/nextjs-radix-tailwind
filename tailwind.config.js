@@ -6,6 +6,7 @@ module.exports = {
       mono: ['Space Mono', 'mono'],
       title: ['Archivo Narrow', 'sans'],
       sans: ['Archivo', 'sans'],
+      serif: ['Alegreya', 'serif'],
     },
     extend: {},
   },

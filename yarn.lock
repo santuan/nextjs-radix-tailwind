@@ -87,6 +87,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/alegreya@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/alegreya/-/alegreya-4.5.0.tgz#27b64b07e737b0ffc9993145d6585ab01ab5ce5c"
+  integrity sha512-kjRzu0YyHuWhFWNBhJ+RZpkyw8zvyYA8n3SHHVnQhHB3Cdmz+/xcd28xPBU0SL4n9ZGlts4EZWO7ikNaOhLXyQ==
+
 "@fontsource/archivo-narrow@^4.5.1":
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/@fontsource/archivo-narrow/-/archivo-narrow-4.5.1.tgz#9feb86db47c7e4b3853cde0ff284bddf0d119021"

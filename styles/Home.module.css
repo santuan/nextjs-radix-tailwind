@@ -35,6 +35,10 @@
   @apply p-6 mx-auto prose-sm prose bg-white lg:prose-lg prose-indigo xl:prose-xl 2xl:prose-2xl;
 }
 
+.typography blockquote {
+  @apply font-serif;
+}
+
 .typography h3 {
   @apply font-title;
 }

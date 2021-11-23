@@ -3,7 +3,7 @@
 }
 
 .Content {
-  @apply w-full max-w-xs p-6 transition-all bg-white border-b-4 border-indigo-500 rounded-md shadow-md;
+  @apply w-full max-w-xs p-6 transition-all bg-white rounded-md shadow-md;
 }
 
 .Content[data-state="open"] {
@@ -26,10 +26,10 @@
 }
 
 .Trigger {
-  @apply flex flex-col items-center justify-center w-10 h-10 overflow-hidden duration-300 bg-indigo-700 rounded-full cursor-pointer focus:shadow-xl hover:bg-indigo-900;
+  @apply flex flex-col items-center justify-center w-12 h-12 overflow-hidden duration-300 bg-indigo-800 rounded-full cursor-pointer focus:shadow-xl focus:ring-2 focus:ring-indigo-800 focus:border-indigo-500 hover:bg-indigo-900;
 }
 
 .ImageTrigger {
   all: unset;
-  @apply block text-2xl text-indigo-100 rounded-full;
+  @apply block text-3xl text-indigo-200;
 }
