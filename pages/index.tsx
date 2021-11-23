@@ -21,32 +21,34 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className="grid w-full grid-cols-3 gap-3 px-6">
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
+        <h1 className="mb-12 font-mono text-3xl text-white">Radix components with Tailwind CSS Modules</h1>
+        <div className="grid w-full grid-cols-3 gap-3 px-6 mx-auto max-w-7xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
             <Accordion />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
-            <Checkbox />
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
+            <ContextMenu />
           </div>
           <div className="flex flex-col items-center justify-start w-full mx-auto overflow-hidden bg-gray-200 shadow-2xl rounded-xl">
             <Tabs />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
             <Slider />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
             <Dialog />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
             <HoverCard />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
-            <ContextMenu />
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
+            <Checkbox />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
+          
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
             <Popover />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto duration-300 bg-gray-200 shadow-2xl focus-within:bg-indigo-200 rounded-xl">
             <ToggleGroup />
           </div>
         </div>
