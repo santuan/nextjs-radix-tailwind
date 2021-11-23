@@ -31,7 +31,7 @@ const ConnectWalletHeader = () => (
         <h2 className="mb-12 text-3xl font-medium md:text-6xl">Are you absolutely sure?</h2>
         <p className="max-w-md px-2 mx-auto text-xl leading-8 ">This action cannot be undone. This will permanently delete your account and remove your data
         from our servers.</p>
-        <div href="/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 mt-8 font-mono text-2xl font-normal leading-6 uppercase tracking-button btn btn-primary ">
+        <div className="px-6 py-2 mt-8 font-mono text-2xl font-normal leading-6 uppercase tracking-button btn btn-primary ">
           Join us
         </div>
       </div>

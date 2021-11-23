@@ -10,20 +10,33 @@ const AccordionDemo = () => (
       <Accordion.Item value="item-1" className={s.Item}>
         <Accordion.Header className={s.Header}>
           <Accordion.Trigger className={s.Trigger}>
-            <span>Accordion</span>
-            <ChevronDownIcon aria-hidden className={s.Icon}/>
+            <span>Is it accessible?</span>
+            <ChevronDownIcon aria-hidden className={s.Icon} />
           </Accordion.Trigger>
         </Accordion.Header>
-        <Accordion.Content className={s.Content}>asd</Accordion.Content>
+        <Accordion.Content className={s.Content}>Yes. It adheres to the WAI-ARAI design pattern.
+        </Accordion.Content>
       </Accordion.Item>
       <Accordion.Item value="item-2" className={s.Item}>
         <Accordion.Header className={s.Header}>
           <Accordion.Trigger className={s.Trigger}>
-            <span>Accordion</span>
-            <ChevronDownIcon aria-hidden className={s.Icon}/>
+            <span>Is it unstyled?</span>
+            <ChevronDownIcon aria-hidden className={s.Icon} />
           </Accordion.Trigger>
         </Accordion.Header>
-        <Accordion.Content className={s.Content}>asd22222222222</Accordion.Content>
+        <Accordion.Content className={s.Content}>Yes. It's unstyled by default, giving you freedom over the look and feel.
+
+        </Accordion.Content>
+      </Accordion.Item>
+      <Accordion.Item value="item-3" className={s.Item}>
+        <Accordion.Header className={s.Header}>
+          <Accordion.Trigger className={s.Trigger}>
+            <span>Can it be animated?</span>
+            <ChevronDownIcon aria-hidden className={s.Icon} />
+          </Accordion.Trigger>
+        </Accordion.Header>
+        <Accordion.Content className={s.Content}>Yes! You can animate the Accordion with CSS or JavaScript.
+        </Accordion.Content>
       </Accordion.Item>
     </Collapse>
   </>

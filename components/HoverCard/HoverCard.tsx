@@ -9,7 +9,6 @@ const HoverCardComponent = () => {
         <HoverCard.Trigger asChild>
           <a className={s.Trigger} href="https://twitter.com/radix_ui" target="_blank" rel="noreferrer noopener">
             <img className={s.ImageTrigger} src="https://tailwindcss.com/_next/static/media/sarah-dayan.a8ff3f1095a58085a82e3bb6aab12eb2.jpg" />
-
           </a>
         </HoverCard.Trigger>
         <HoverCard.Content className={s.Content}>

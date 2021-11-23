@@ -23,11 +23,11 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <h1 className="my-2 font-mono text-3xl text-white">
-          <a href="https://www.radix-ui.com/" target="_blank">
+          <a href="https://www.radix-ui.com/" target="_blank" rel="noopener noreferrer">
             Radix UI
           </a>
           {" "}with{" "}
-          <a href="https://www.radix-ui.com/https://tailwindcss.com/" target="_blank">
+          <a href="https://www.radix-ui.com/https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
             Tailwind 
           </a>
         </h1>
@@ -41,11 +41,11 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <Accordion />
             <div className={styles.links}>
-              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/accordion">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.radix-ui.com/docs/primitives/components/accordion">
                 Documentation
               </a>
               <BsDot />
-              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Accordion">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Accordion">
                 See Template
               </a>
             </div>
@@ -53,11 +53,11 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <ContextMenu />
             <div className={styles.links}>
-              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/accordion">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.radix-ui.com/docs/primitives/components/accordion">
                 Documentation
               </a>
               <BsDot />
-              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/ContextMenu">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/ContextMenu">
                 See Template
               </a>
             </div>
@@ -65,11 +65,11 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <Dialog />
             <div className={styles.links}>
-              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/dialog">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.radix-ui.com/docs/primitives/components/dialog">
                 Documentation
               </a>
               <BsDot />
-              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Dialog">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Dialog">
                 See Template
               </a>
             </div>
@@ -77,11 +77,11 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <Slider />
             <div className={styles.links}>
-              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/slider">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.radix-ui.com/docs/primitives/components/slider">
                 Documentation
               </a>
               <BsDot />
-              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Slider">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Slider">
                 See Template
               </a>
             </div>
@@ -89,11 +89,11 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <Tabs />
             <div className={styles.links}>
-              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/tabs">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.radix-ui.com/docs/primitives/components/tabs">
                 Documentation
               </a>
               <BsDot />
-              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Tabs">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Tabs">
                 See Template
               </a>
             </div>
@@ -101,11 +101,11 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <HoverCard />
             <div className={styles.links}>
-              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/hover-card">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.radix-ui.com/docs/primitives/components/hover-card">
                 Documentation
               </a>
               <BsDot />
-              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/HoverCard">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/HoverCard">
                 See Template
               </a>
             </div>
@@ -113,11 +113,11 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <Checkbox />
             <div className={styles.links}>
-              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/checkbox">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.radix-ui.com/docs/primitives/components/checkbox">
                 Documentation
               </a>
               <BsDot />
-              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Checkbox">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Checkbox">
                 See Template
               </a>
             </div>
@@ -125,11 +125,11 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <Popover />
             <div className={styles.links}>
-              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/popover">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.radix-ui.com/docs/primitives/components/popover">
                 Documentation
               </a>
               <BsDot />
-              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Popover">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Popover">
                 See Template
               </a>
             </div>
@@ -137,11 +137,11 @@ const Home: NextPage = () => {
           <div className={styles.HomeItem}>
             <ToggleGroup />
             <div className={styles.links}>
-              <a target="_blank" href="https://www.radix-ui.com/docs/primitives/components/toggle-group">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.radix-ui.com/docs/primitives/components/toggle-group">
                 Documentation
               </a>
               <BsDot />
-              <a target="_blank" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/ToggleGroup">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/ToggleGroup">
                 See Template
               </a>
             </div>
