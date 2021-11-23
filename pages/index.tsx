@@ -240,7 +240,7 @@ const Home: NextPage = () => {
         <p>Something a wise person once said about typography is:</p>
         <blockquote>
           <p>
-            Ants and butterflies. An idea to establish the possible paths for the design of fonts. The "typographic ants" are in charge of the painstaking and laborious task of making a text legible, a very useful work, but imperceptible to the eyes of the reader. On the other hand, the display of "typographic butterflies" deliberately manifests their fullness and forms on a large scale.
+            Ants and butterflies. An idea to establish the possible paths for the design of fonts. The &quot;typographic ants&quot; are in charge of the painstaking and laborious task of making a text legible, a very useful work, but imperceptible to the eyes of the reader. On the other hand, the display of &quot;typographic butterflies&quot; deliberately manifests their fullness and forms on a large scale.
           </p>
           <p>An idea by Luis Siquot </p>
         </blockquote>

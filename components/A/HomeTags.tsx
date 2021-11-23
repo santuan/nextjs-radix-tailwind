@@ -55,7 +55,7 @@ const HomeTags = () => {
                 rel="noopener noreferrer" className="font-mono text-xl font-bold text-indigo-600 hover:text-gray-900">Tailwind Typography</a>
             </div>
             <p className="mt-2 text-base">
-              A plugin that provides a set of prose classes you can use to add beautiful typographic defaults to any vanilla HTML you don't control (like HTML rendered from Markdown, or pulled from a CMS).
+              A plugin that provides a set of prose classes you can use to add beautiful typographic defaults to any vanilla HTML you don&apos;t control (like HTML rendered from Markdown, or pulled from a CMS).
             </p>
           </div>
           <HoverCard.Arrow className={s.Arrow} />
