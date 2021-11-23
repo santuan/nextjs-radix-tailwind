@@ -1,180 +1,46 @@
 import React from 'react';
-import { styled, keyframes } from '@stitches/react';
-import { gray, mauve, blackA } from '@radix-ui/colors';
 import { VscSettings } from "react-icons/vsc";
 import { GrClose } from "react-icons/gr";
-import * as PopoverPrimitive from '@radix-ui/react-popover';
-
-const slideUpAndFade = keyframes({
-  '0%': { opacity: 0, transform: 'translateY(2px)' },
-  '100%': { opacity: 1, transform: 'translateY(0)' },
-});
-
-const slideRightAndFade = keyframes({
-  '0%': { opacity: 0, transform: 'translateX(-2px)' },
-  '100%': { opacity: 1, transform: 'translateX(0)' },
-});
-
-const slideDownAndFade = keyframes({
-  '0%': { opacity: 0, transform: 'translateY(-2px)' },
-  '100%': { opacity: 1, transform: 'translateY(0)' },
-});
-
-const slideLeftAndFade = keyframes({
-  '0%': { opacity: 0, transform: 'translateX(2px)' },
-  '100%': { opacity: 1, transform: 'translateX(0)' },
-});
-const StyledContent = styled(PopoverPrimitive.Content, {
-  borderRadius: 4,
-  padding: 20,
-  width: 260,
-  backgroundColor: 'white',
-  boxShadow: 'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
-  '@media (prefers-reduced-motion: no-preference)': {
-    animationDuration: '400ms',
-    animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
-    willChange: 'transform, opacity',
-    '&[data-state="open"]': {
-      '&[data-side="top"]': { animationName: slideDownAndFade },
-      '&[data-side="right"]': { animationName: slideLeftAndFade },
-      '&[data-side="bottom"]': { animationName: slideUpAndFade },
-      '&[data-side="left"]': { animationName: slideRightAndFade },
-    },
-  },
-  '&:focus': {
-    boxShadow: `hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px, 0 0 0 2px ${gray.gray7}`,
-  },
-});
-
-const StyledArrow = styled(PopoverPrimitive.Arrow, {
-  fill: 'white',
-});
-
-const StyledClose = styled(PopoverPrimitive.Close, {
-  all: 'unset',
-  fontFamily: 'inherit',
-  borderRadius: '100%',
-  height: 25,
-  width: 25,
-  display: 'inline-flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  color: gray.gray11,
-  position: 'absolute',
-  top: 5,
-  right: 5,
-
-  '&:hover': { backgroundColor: gray.gray4 },
-  '&:focus': { boxShadow: `0 0 0 2px ${gray.gray7}` },
-});
-
-// Exports
-export const Popover = PopoverPrimitive.Root;
-export const PopoverTrigger = PopoverPrimitive.Trigger;
-export const PopoverContent = StyledContent;
-export const PopoverArrow = StyledArrow;
-export const PopoverClose = StyledClose;
-
-// Your app...
-const Flex = styled('div', { display: 'flex' });
-
-const IconButton = styled('button', {
-  all: 'unset',
-  fontFamily: 'inherit',
-  borderRadius: '100%',
-  height: 35,
-  width: 35,
-  display: 'inline-flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  color: "#fff",
-  backgroundColor: '#333',
-  cursor: 'pointer',
-  boxShadow: `0 2px 10px ${blackA.blackA7}`,
-  '&:hover': { backgroundColor: "#444" },
-  '&:focus': { boxShadow: `0 0 0 2px black` },
-});
-const Fieldset = styled('fieldset', {
-  all: 'unset',
-  display: 'flex',
-  gap: 20,
-  alignItems: 'center',
-});
-
-const Label = styled('label', {
-  fontSize: 13,
-  color: gray.gray11,
-  width: 75,
-});
-
-const Input = styled('input', {
-  all: 'unset',
-  width: '100%',
-  display: 'inline-flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  flex: '1',
-  borderRadius: 4,
-  padding: '0 10px',
-  fontSize: 13,
-  lineHeight: 1,
-  color: gray.gray11,
-  boxShadow: `0 0 0 1px ${gray.gray7}`,
-  height: 25,
-
-  '&:focus': { boxShadow: `0 0 0 2px ${gray.gray8}` },
-});
-
-const Text = styled('div', {
-  margin: 0,
-  color: mauve.mauve12,
-  fontSize: 15,
-  lineHeight: '19px',
-  variants: {
-    faded: {
-      true: { color: mauve.mauve10 },
-    },
-    bold: {
-      true: { fontWeight: 500 },
-    },
-  },
-});
+import * as Popover from '@radix-ui/react-popover';
+import s from './Popover.module.css';
 
 const PopoverDemo = () => (
-  <Popover>
-    <PopoverTrigger asChild>
-      <IconButton aria-label="Update dimensions">
-        <VscSettings />
-      </IconButton>
-    </PopoverTrigger>
-    <PopoverContent sideOffset={5} >
-      <Flex css={{ flexDirection: 'column', gap: 10 }}>
-        <Text bold css={{ marginBottom: 10 }}>
-          Dimensions
-        </Text>
-        <Fieldset>
-          <Label htmlFor="width">Width</Label>
-          <Input id="width" defaultValue="100%" />
-        </Fieldset>
-        <Fieldset>
-          <Label htmlFor="maxWidth">Max. width</Label>
-          <Input id="maxWidth" defaultValue="300px" />
-        </Fieldset>
-        <Fieldset>
-          <Label htmlFor="height">Height</Label>
-          <Input id="height" defaultValue="25px" />
-        </Fieldset>
-        <Fieldset>
-          <Label htmlFor="maxHeight">Max. height</Label>
-          <Input id="maxHeight" defaultValue="none" />
-        </Fieldset>
-      </Flex>
-      <PopoverArrow />
-      <PopoverClose aria-label="Close">
-        <GrClose />
-      </PopoverClose>
-    </PopoverContent>
-  </Popover>
+  <div className={s.Container}>
+    <Popover.Root >
+      <Popover.Trigger asChild>
+        <button className={s.TriggerIcon} aria-label="Update dimensions">
+          <VscSettings />
+        </button>
+      </Popover.Trigger>
+      <Popover.Content className={s.Content} >
+        <div className="flex flex-col p-2">
+          <div className="mb-2 font-bold">
+            Dimensions
+          </div>
+          <fieldset>
+            <label htmlFor="width">Width</label>
+            <input id="width" defaultValue="100%" />
+          </fieldset>
+          <fieldset>
+            <label htmlFor="maxWidth">Max. width</label>
+            <input id="maxWidth" defaultValue="300px" />
+          </fieldset>
+          <fieldset>
+            <label htmlFor="height">Height</label>
+            <input id="height" defaultValue="25px" />
+          </fieldset>
+          <fieldset>
+            <label htmlFor="maxHeight">Max. height</label>
+            <input id="maxHeight" defaultValue="none" />
+          </fieldset>
+        </div>
+        <Popover.Arrow className={s.Arrow} />
+        <Popover.Close className={s.Close} aria-label="Close">
+          <GrClose className="text-sm"/>
+        </Popover.Close>
+      </Popover.Content>
+    </Popover.Root>
+  </div>
 );
 
 export default PopoverDemo;

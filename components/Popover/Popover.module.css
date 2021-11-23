@@ -1,0 +1,63 @@
+.Container {
+  @apply relative flex flex-col items-center justify-center;
+}
+
+.Content {
+  @apply w-full max-w-xs p-3 mx-auto transition-all bg-white rounded-md shadow-md focus:shadow-2xl;
+}
+
+.Content[data-state="open"] {
+  animation: slideUpAndFade 0.3s linear;
+}
+
+@keyframes slideUpAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Content fieldset {
+  all: unset;
+  @apply flex items-center py-1 text-sm;
+}
+
+.Content fieldset label {
+  all: unset;
+  @apply w-24 text-indigo-700;
+}
+
+.Content fieldset input {
+  all: unset;
+  flex: 1;
+  border: 2px solid;
+  @apply inline-flex items-center justify-center w-full h-6 px-3 text-sm leading-none text-indigo-700 border-indigo-300 rounded-md shadow-xl focus:ring-2 focus:border-indigo-500;
+}
+
+.Arrow {
+  @apply text-white fill-current;
+}
+
+.Trigger {
+  @apply flex flex-col items-center justify-center w-12 h-12 overflow-hidden rounded-full cursor-pointer focus:shadow-xl;
+}
+
+.ImageTrigger {
+  all: unset;
+  @apply block object-cover object-center w-full h-full rounded-full;
+}
+
+.TriggerIcon {
+  all: unset;
+  @apply inline-flex items-center justify-center overflow-hidden text-white duration-300 bg-gray-900 rounded-full cursor-pointer hover:bg-indigo-600 w-11 h-11 focus:bg-indigo-500;
+}
+
+.Close {
+  all: unset;
+  @apply absolute inline-flex items-center justify-center w-6 h-6 top-2 right-2;
+  @apply overflow-hidden duration-300 rounded-full cursor-pointer hover:bg-gray-300 focus:bg-gray-300 focus:shadow-xl;
+}

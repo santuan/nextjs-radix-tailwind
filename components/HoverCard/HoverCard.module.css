@@ -1,3 +1,35 @@
 .Container {
-  @apply relative;
+  @apply relative flex flex-col items-center justify-center;
+}
+
+.Content {
+  @apply p-6 transition-all bg-white rounded-md shadow-md w-96;
+}
+
+.Content[data-state="open"] {
+  animation: slideUpAndFade 0.3s linear;
+}
+
+@keyframes slideUpAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Arrow {
+  @apply text-white fill-current;
+}
+
+.Trigger {
+  @apply flex flex-col items-center justify-center w-12 h-12 overflow-hidden rounded-full cursor-pointer focus:shadow-xl;
+}
+
+.ImageTrigger {
+  all: unset;
+  @apply block object-cover object-center w-full h-full rounded-full;
 }

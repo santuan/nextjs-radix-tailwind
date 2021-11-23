@@ -22,31 +22,31 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <div className="grid w-full grid-cols-3 gap-3 px-6">
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-white shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
             <Accordion />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-white shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
             <Checkbox />
           </div>
-          <div className="flex flex-col items-center justify-start w-full mx-auto overflow-hidden bg-white shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-start w-full mx-auto overflow-hidden bg-gray-200 shadow-2xl rounded-xl">
             <Tabs />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-white shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
             <Slider />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-white shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
             <Dialog />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-white shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
             <HoverCard />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-blue-900 shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
             <ContextMenu />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-green-900 shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
             <Popover />
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-indigo-900 shadow-2xl rounded-xl">
+          <div className="flex flex-col items-center justify-center w-full p-4 mx-auto bg-gray-200 shadow-2xl rounded-xl">
             <ToggleGroup />
           </div>
         </div>
