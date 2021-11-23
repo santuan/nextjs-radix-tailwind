@@ -10,10 +10,10 @@ const TabsDemo = () => (
         <Tabs.Trigger value="pass" className={s.Trigger}>Password</Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content value="account" className={s.Content}>
-        Make changes to your account here. Click save when you're done.
+        Make changes to your account here. Click save when you&apos;re done.
       </Tabs.Content>
       <Tabs.Content value="pass" className={s.Content}>
-        Change your password here. After saving, you'll be logged out.
+        Change your password here. After saving, you&apos;ll be logged out.
       </Tabs.Content>
     </Tabs.Root>
   </>
