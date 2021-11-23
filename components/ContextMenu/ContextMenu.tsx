@@ -122,7 +122,7 @@ export const ContextMenuDemo = () => {
         <ContextMenuTrigger>
           <Instruction>Right click in here.</Instruction>
         </ContextMenuTrigger>
-        <ContextMenuContent sideOffset={5} align="end">
+        <ContextMenuContent sideOffset={5} >
           <ContextMenuItem>
             Back <RightSlot>⌘+[</RightSlot>
           </ContextMenuItem>

@@ -101,7 +101,7 @@ const HoverCardComponent = () => {
     <HoverCard>
       <HoverCardTrigger asChild>
         <ImageTrigger href="https://twitter.com/radix_ui" target="_blank" rel="noreferrer noopener">
-          <Img src="https://pbs.twimg.com/profile_images/1337055608613253126/r_eiMp2H_400x400.png" />
+          <Img src="https://tailwindcss.com/_next/static/media/sarah-dayan.a8ff3f1095a58085a82e3bb6aab12eb2.jpg" />
           Hover Card
         </ImageTrigger>
       </HoverCardTrigger>
@@ -109,7 +109,7 @@ const HoverCardComponent = () => {
         <Flex css={{ flexDirection: 'column', gap: 7 }}>
           <Img
             size="large"
-            src="https://pbs.twimg.com/profile_images/1337055608613253126/r_eiMp2H_400x400.png"
+            src="https://tailwindcss.com/_next/static/media/sarah-dayan.a8ff3f1095a58085a82e3bb6aab12eb2.jpg"
           />
           <Flex css={{ flexDirection: 'column', gap: 15 }}>
             <Text>
