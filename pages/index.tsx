@@ -12,6 +12,7 @@ import ContextMenu from "@/components/ContextMenu";
 import Popover from "@/components/Popover";
 import ToggleGroup from "@/components/ToggleGroup";
 import HomeTags from "@/components/A/HomeTags";
+import DialogSandbox from "@/components/A/DialogSandbox";
 
 const Home: NextPage = () => {
   return (
@@ -23,7 +24,7 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <header
-          className="top-0 left-0 right-0 z-50 flex flex-col items-center justify-between w-full px-6 py-3 bg-gray-900 md:flex-row lg:fixed bg-opacity-90"
+          className="top-0 left-0 right-0 z-50 flex flex-col items-center justify-between w-full px-6 py-3 bg-gray-900 md:flex-row bg-opacity-90"
           style={{ backdropFilter: "blur(5px)" }}
         >
           <h1 className="my-2 text-3xl text-white font-title">
@@ -86,7 +87,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.HomeItem}>
             <ContextMenu />
-            <span className="lg:hidden">Desktop only</span>
+            <span className="lg:hidden">Mouse only</span>
             <div className={styles.links}>
               <p>ContextMenu</p>
               <BsDot />
@@ -151,7 +152,7 @@ const Home: NextPage = () => {
               </a>
             </div>
           </div>
-          <div className={styles.HomeItem}>
+          <div className={`${styles.HomeItem} ${styles.HomeItemTab}`}>
             <Tabs />
             <div className={styles.links}>
               <p>Tabs</p>
@@ -263,26 +264,46 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
+      <div className="flex items-center justify-center w-full py-24 mb-24 bg-gray-900 bg-gradient-to-br from-gray-600 to-gray-800">
+        <DialogSandbox />
+      </div>
       <article className={styles.typography}>
-        <a
-          href="https://github.com/tailwindlabs/tailwindcss-typography"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-mono text-xl font-bold text-indigo-600 hover:text-gray-900"
-        >
-          Tailwind Typography
-        </a>
-        <h3>Typography should be easy</h3>
-        <blockquote>
+        <div className="relative mt-12">
+          <div className="block w-full text-xl not-italic font-title">
+            Typography should be easy. {" "}
+            <a
+              href="https://github.com/tailwindlabs/tailwindcss-typography"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 hover:text-gray-900"
+            >
+              Tailwind Typography
+            </a>
+            {" "}
+            and
+            {" "}
+            <a
+              href="https://fontsource.org/fonts"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 hover:text-gray-900"
+            >
+              Fontsource
+            </a>
+          </div>
+          <h2 className={styles.butterfly}>Ants and butterflies</h2>
+        </div>
+        <div>
           <p>
-            Ants and butterflies. An idea to establish the possible paths for the design of fonts. The &quot;typographic
+            An idea to establish the possible paths for the design of fonts. The &quot;typographic
             ants&quot; are in charge of the painstaking and laborious task of making a text legible, a very useful work,
             but imperceptible to the eyes of the reader. On the other hand, the display of &quot;typographic
             butterflies&quot; deliberately manifests their fullness and forms on a large scale.
           </p>
-          <p>An idea by Luis Siquot</p>
-        </blockquote>
+          <b>by Luis Siquot</b>
+        </div>
       </article>
+
       <div className="flex flex-col items-center justify-center w-full py-24 mt-24 font-mono text-white bg-gray-800">
         <p>Thanks to all the libraries that made this possible.</p>
         <a

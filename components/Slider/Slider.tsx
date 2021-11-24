@@ -7,7 +7,7 @@ const SliderDemo = () => (
     <Slider.Track className="relative flex-grow h-1 bg-gray-900 rounded-full outline-none">
       <Slider.Range className="absolute h-full bg-indigo-500 rounded-full outline-none" />
     </Slider.Track>
-    <Slider.Thumb className="z-50 block w-4 h-4 font-bold bg-indigo-500 rounded-full shadow-xl outline-none " data-tip="1.0" />
+    <Slider.Thumb className="z-50 block w-4 h-4 font-bold bg-indigo-500 rounded-full shadow-xl outline-none ring-indigo-400 focus:ring-4 " data-tip="1.0" />
   </Slider.Root>
 );
 
