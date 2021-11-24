@@ -11,7 +11,7 @@
 }
 
 .HomeItemTab {
-@apply px-0 pt-0 pb-12;
+  @apply px-0 pt-0 pb-12;
 }
 
 .tags {
@@ -37,10 +37,10 @@
 
 .typography {
   @apply p-6 px-8 mx-auto bg-white;
-  @apply  prose lg:prose-lg prose-indigo xl:prose-xl;
+  @apply prose lg:prose-lg prose-indigo xl:prose-xl;
 }
 
-.typography  {
+.typography {
   font-family: "Alegreya", sans-serif;
   font-weight: 500;
   font-style: italic;
@@ -54,7 +54,7 @@
 }
 
 @supports (font-variation-settings: normal) {
-  .typography  {
+  .typography {
     font-family: "Alegreya";
     font-variation-settings: "wght" 500;
     font-variation-settings: "ital" 1;

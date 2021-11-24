@@ -26,7 +26,7 @@ const ConnectWalletHeader = () => (
     </DialogTrigger>
     <DialogContent className="flex items-center justify-center">
       <div className="fixed flex flex-col items-center justify-center w-full mx-auto text-center transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
-        <iframe src="https://codesandbox.io/embed/rough-smoke-tco68?autoresize=1&fontsize=12&hidenavigation=1&module=%2Fcomponents%2FAccordion%2FAccordion.tsx&moduleview=1&theme=dark"
+        <iframe src="https://codesandbox.io/embed/github/santuan/nextjs-radix-tailwind/tree/main/?autoresize=1&fontsize=13&hidenavigation=1&module=%2Fcomponents%2FAccordion%2FAccordion.tsx&theme=dark&view=editor"
           className="w-full px-4 mx-auto overflow-hidden border-0 max-w-7xl"
           style={{height: '660px'}}
           title="rough-smoke-tco68"
