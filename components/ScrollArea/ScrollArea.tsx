@@ -4,38 +4,16 @@ import s from './ScrollArea.module.css';
 import { violet, mauve, blackA } from '@radix-ui/colors';
 import * as ScrollAreaPrimitive from '@radix-ui/react-scroll-area';
 
-
 // Exports
-const ScrollArea = ScrollAreaPrimitive.Root;
-const ScrollAreaViewport = ScrollAreaPrimitive.Viewport;
-const ScrollAreaScrollbar = ScrollAreaPrimitive.Scrollbar;
-const ScrollAreaThumb = ScrollAreaPrimitive.Thumb;
-const ScrollAreaCorner = ScrollAreaPrimitive.Corner;
-
-// Your app...
-const Box = styled('div', {});
-
-const Text = styled('div', {
-  color: violet.violet11,
-  fontSize: 15,
-  lineHeight: '18px',
-  fontWeight: 500,
-});
-
-const Tag = styled('div', {
-  color: mauve.mauve12,
-  fontSize: 13,
-  lineHeight: '18px',
-  marginTop: 10,
-  borderTop: `1px solid ${mauve.mauve6}`,
-  paddingTop: 10,
-});
-
-const TAGS = Array.from({ length: 50 }).map((_, i, a) => `v1.2.0-beta.${a.length - i}`);
+export const ScrollArea = ScrollAreaPrimitive.Root;
+export const ScrollAreaViewport = ScrollAreaPrimitive.Viewport;
+export const ScrollAreaScrollbar = ScrollAreaPrimitive.Scrollbar;
+export const ScrollAreaThumb = ScrollAreaPrimitive.Thumb;
+export const ScrollAreaCorner = ScrollAreaPrimitive.Corner;
 
 const ScrollAreaDemo = () => (
   <ScrollArea className={s.ScrollArea}>
-    <div className="p-3 text-2xl font-bold border-b border-gray-300 font-title">ScrollArea</div>
+    <div className="p-3 text-xl font-bold border-b border-gray-300 font-title">ScrollArea</div>
     <ScrollAreaViewport className={s.ScrollAreaViewport}>
       <div className="px-3">
         {TAGS.map((tag) => (
@@ -54,3 +32,5 @@ const ScrollAreaDemo = () => (
 );
 
 export default ScrollAreaDemo;
+
+const TAGS = Array.from({ length: 50 }).map((_, i, a) => `List.${a.length - i}`);

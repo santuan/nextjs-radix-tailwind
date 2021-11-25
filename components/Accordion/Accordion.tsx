@@ -25,7 +25,6 @@ const AccordionDemo = () => (
           </Accordion.Trigger>
         </Accordion.Header>
         <Accordion.Content className={s.Content}>Yes. It&apos;s unstyled by default, giving you freedom over the look and feel.
-
         </Accordion.Content>
       </Accordion.Item>
       <Accordion.Item value="item-3" className={s.Item}>

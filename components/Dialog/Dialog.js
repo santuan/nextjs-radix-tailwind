@@ -20,7 +20,7 @@ const StyledOverlay = DialogPrimitive.Overlay;
 const ConnectWalletHeader = () => (
   <Dialog>
     <DialogTrigger asChild>
-      <button className="px-6 py-3 font-mono text-xl font-normal leading-6 text-white uppercase duration-300 bg-gray-900 border-4 border-transparent rounded-md focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600">
+      <button className="px-6 py-3 font-mono text-xl font-normal leading-6 text-white uppercase duration-300 bg-gray-900 border-4 border-transparent rounded-md hover:bg-indigo-900 focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600">
         Open Dialog
       </button>
     </DialogTrigger>

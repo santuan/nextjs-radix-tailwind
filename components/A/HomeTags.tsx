@@ -9,7 +9,7 @@ const HomeTags = () => {
       <b className="mb-2 mr-3 font-mono text-sm text-gray-400 uppercase">made in</b>
       <HoverCard.Root openDelay={300} closeDelay={300}>
         <HoverCard.Trigger asChild>
-          <span>Next.js</span>
+          <span className="cursor-help">Next.js</span>
         </HoverCard.Trigger>
         <HoverCard.Content className={s.Content}>
           <div className="flex flex-col ">
@@ -35,7 +35,7 @@ const HomeTags = () => {
       </HoverCard.Root>
       <HoverCard.Root openDelay={300} closeDelay={300}>
         <HoverCard.Trigger asChild>
-          <span>CSS Modules</span>
+          <span className="cursor-help">CSS Modules</span>
         </HoverCard.Trigger>
         <HoverCard.Content className={s.Content}>
           <div className="flex flex-col ">
@@ -59,7 +59,7 @@ const HomeTags = () => {
       </HoverCard.Root>
       <HoverCard.Root openDelay={300} closeDelay={300}>
         <HoverCard.Trigger asChild>
-          <span>Typography</span>
+          <span className="cursor-help">Typography</span>
         </HoverCard.Trigger>
         <HoverCard.Content className={s.Content}>
           <div className="flex flex-col ">
@@ -84,7 +84,7 @@ const HomeTags = () => {
       </HoverCard.Root>
       <HoverCard.Root openDelay={300} closeDelay={300}>
         <HoverCard.Trigger asChild>
-          <span>React Icons</span>
+          <span className="cursor-help">React Icons</span>
         </HoverCard.Trigger>
         <HoverCard.Content className={s.Content}>
           <div className="flex flex-col ">
@@ -109,7 +109,7 @@ const HomeTags = () => {
       </HoverCard.Root>
       <HoverCard.Root openDelay={300} closeDelay={300}>
         <HoverCard.Trigger asChild>
-          <span>Font Source</span>
+          <span className="cursor-help">Font Source</span>
         </HoverCard.Trigger>
         <HoverCard.Content className={s.Content}>
           <div className="flex flex-col ">

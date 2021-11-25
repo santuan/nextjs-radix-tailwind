@@ -7,16 +7,17 @@
 }
 
 .HomeItem {
-  @apply relative flex flex-col items-center justify-center w-full p-4 pb-12 mx-auto overflow-hidden duration-300 bg-gray-200 shadow-2xl opacity-95 hover:opacity-95 focus-within:bg-gray-50 focus-within:opacity-100 rounded-xl;
+  @apply relative flex flex-col items-center justify-center w-full p-4 pb-12 mx-auto overflow-hidden duration-300 bg-gray-200 rounded-lg shadow-2xl opacity-95 hover:opacity-95 focus-within:bg-gray-50 focus-within:opacity-100;
+  min-height: 160px;
 }
 
-.HomeItemTab {
+/* .HomeItemTab {
   @apply px-0 pt-0 pb-12;
 }
 
 .HomeItemHorizontal {
   @apply col-span-2;
-}
+} */
 
 .tags {
   @apply flex flex-wrap items-center justify-center;
@@ -41,7 +42,7 @@
 
 .typography {
   @apply p-6 px-8 mx-auto bg-white;
-  @apply prose lg:prose-lg prose-indigo xl:prose-xl;
+  @apply prose lg:prose-lg prose-indigo xl:prose-2xl;
 }
 
 .typography {
@@ -51,8 +52,7 @@
 }
 
 .typography .butterfly {
-  @apply block w-full m-0 mt-3 font-serif leading-none;
-  font-size: 6rem;
+  @apply block w-full m-0 mt-3 font-serif text-4xl leading-none md:text-6xl ;
   color: #111827;
   font-weight: 900;
 }

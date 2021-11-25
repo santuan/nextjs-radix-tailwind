@@ -10,9 +10,9 @@
 .Header {
   @apply relative pb-1;
 }
-
+  
 .Icon {
-  @apply absolute right-0 duration-300 transform top-2;
+  @apply absolute right-0 w-8 h-8 text-gray-600 duration-300 transform rounded-full hover:bg-gray-200;
 }
 
 .Trigger[data-state="open"] .Icon {
