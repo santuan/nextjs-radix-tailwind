@@ -41,7 +41,6 @@ const Home: NextPage = () => {
           <HomeTags />
         </header>
         <div className="flex-col hidden pt-24 my-6 font-sans text-center text-white lg:flex">
-          <span>Awesome Radix accessibility out of the box.</span>
           <span>
             Press <code className="inline-flex px-1 mx-1 font-mono text-sm font-bold text-indigo-900 uppercase bg-indigo-100 rounded-md bg-opacity-80">Tab</code> on the
             Keyboard to start and{" "}
