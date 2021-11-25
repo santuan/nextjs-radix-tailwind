@@ -11,6 +11,8 @@ import HoverCard from "@/components/HoverCard";
 import ContextMenu from "@/components/ContextMenu";
 import Popover from "@/components/Popover";
 import ToggleGroup from "@/components/ToggleGroup";
+import ScrollArea from "@/components/ScrollArea";
+import ScrollAreaHorizontal from "@/components/ScrollArea/ScrollAreaHorizontal";
 import HomeTags from "@/components/A/HomeTags";
 import DialogSandbox from "@/components/A/DialogSandbox";
 
@@ -63,205 +65,32 @@ const Home: NextPage = () => {
           </span>
         </div>
         <div className="grid w-full px-6 mx-auto md:grid-cols-2 xl:grid-cols-3 gap-9 max-w-7xl">
-          <div className={styles.HomeItem}>
-            <Accordion />
-            <div className={styles.links}>
-              <p>Accordion</p>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.radix-ui.com/docs/primitives/components/accordion"
-              >
-                Documentation
-              </a>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Accordion"
-              >
-                See Template
-              </a>
-            </div>
-          </div>
-          <div className={styles.HomeItem}>
-            <ContextMenu />
-            <span className="lg:hidden">Mouse only</span>
-            <div className={styles.links}>
-              <p>ContextMenu</p>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.radix-ui.com/docs/primitives/components/accordion"
-              >
-                Documentation
-              </a>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/ContextMenu"
-              >
-                See Template
-              </a>
-            </div>
-          </div>
-          <div className={styles.HomeItem}>
-            <Dialog />
-            <div className={styles.links}>
-              <p>Dialog</p>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.radix-ui.com/docs/primitives/components/dialog"
-              >
-                Documentation
-              </a>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Dialog"
-              >
-                See Template
-              </a>
-            </div>
-          </div>
-          <div className={styles.HomeItem}>
-            <Slider />
-            <div className={styles.links}>
-              <p>Slider</p>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.radix-ui.com/docs/primitives/components/slider"
-              >
-                Documentation
-              </a>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Slider"
-              >
-                See Template
-              </a>
-            </div>
-          </div>
-          <div className={`${styles.HomeItem} ${styles.HomeItemTab}`}>
-            <Tabs />
-            <div className={styles.links}>
-              <p>Tabs</p>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.radix-ui.com/docs/primitives/components/tabs"
-              >
-                Documentation
-              </a>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Tabs"
-              >
-                See Template
-              </a>
-            </div>
-          </div>
-          <div className={styles.HomeItem}>
-            <HoverCard />
-            <div className={styles.links}>
-              <p>HoverCard</p>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.radix-ui.com/docs/primitives/components/hover-card"
-              >
-                Documentation
-              </a>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/HoverCard"
-              >
-                See Template
-              </a>
-            </div>
-          </div>
-          <div className={styles.HomeItem}>
-            <Checkbox />
-            <div className={styles.links}>
-              <p>Checkbox</p>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.radix-ui.com/docs/primitives/components/checkbox"
-              >
-                Documentation
-              </a>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Checkbox"
-              >
-                See Template
-              </a>
-            </div>
-          </div>
-          <div className={styles.HomeItem}>
-            <Popover />
-            <div className={styles.links}>
-              <p>Popover</p>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.radix-ui.com/docs/primitives/components/popover"
-              >
-                Documentation
-              </a>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/Popover"
-              >
-                See Template
-              </a>
-            </div>
-          </div>
-          <div className={styles.HomeItem}>
-            <ToggleGroup />
-            <div className={styles.links}>
-              <p>Toggle Group</p>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.radix-ui.com/docs/primitives/components/toggle-group"
-              >
-                Documentation
-              </a>
-              <BsDot />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/ToggleGroup"
-              >
-                See Template
-              </a>
-            </div>
-          </div>
+          {Roadmap.map((item, i) => {
+            return (
+              <div key={i}  className={`${styles.HomeItem} ${item.customClass}`}>
+                {item.component}
+                <div className={styles.links}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={`https://www.radix-ui.com/docs/primitives/components/${item.slug}`}
+                  >
+                    Documentation
+                  </a>
+                  <BsDot />
+                  <p>{item.title}</p>
+                  <BsDot />
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={`https://github.com/santuan/nextjs-radix-tailwind/tree/main/components/${item.title}`}
+                  >
+                    See Template
+                  </a>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </main>
       <div className="flex items-center justify-center w-full py-24 mb-24 bg-gray-900 bg-gradient-to-br from-gray-600 to-gray-800">
@@ -320,3 +149,77 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+
+
+const Roadmap = [
+  {
+    title: "Accordion",
+    slug: "accordion",
+    customClass: "col-span-2",
+    component: <Accordion />,
+  },
+  {
+    title: "Dialog",
+    slug: "dialog",
+    customClass: '',
+    component: <Dialog />,
+  },
+  {
+    title: "Tabs",
+    slug: "tabs",
+    customClass: "h-64",
+    component: <Tabs />,
+  },
+  {
+    title: "Slider",
+    slug: "slider",
+    customClass: '',
+    component: <Slider />,
+  },
+
+  {
+    title: "HoverCard",
+    slug: "hover-card",
+    customClass: '',
+    component: <HoverCard />,
+
+  },
+  {
+    title: "Checkbox",
+    slug: "checkbox",
+    customClass: 'h-64',
+    component: <Checkbox />,
+
+  },
+  {
+    title: "Popover",
+    slug: "popover",
+    customClass: '',
+    component: <Popover />,
+
+  },
+  {
+    title: "ToggleGroup",
+    slug: "toggle-group",
+    customClass: '',
+    component: <ToggleGroup />,
+
+  },
+  {
+    title: "ScrollArea",
+    slug: "scroll-area",
+    customClass: '!p-0 !pb-7',
+    component: <ScrollArea />,
+
+  },
+  {
+    title: "ScrollAreaHorizontal",
+    slug: "scroll-area",
+    customClass: "col-span-2 !p-0 !pb-12",
+    component: <ScrollAreaHorizontal />,
+
+  },
+];
+
+

@@ -7,11 +7,15 @@
 }
 
 .HomeItem {
-  @apply relative flex flex-col items-center justify-center w-full p-4 pb-12 mx-auto overflow-hidden duration-300 bg-gray-200 shadow-2xl opacity-80 hover:opacity-95 focus-within:bg-gray-50 focus-within:opacity-100 rounded-xl;
+  @apply relative flex flex-col items-center justify-center w-full p-4 pb-12 mx-auto overflow-hidden duration-300 bg-gray-200 shadow-2xl opacity-95 hover:opacity-95 focus-within:bg-gray-50 focus-within:opacity-100 rounded-xl;
 }
 
 .HomeItemTab {
   @apply px-0 pt-0 pb-12;
+}
+
+.HomeItemHorizontal {
+  @apply col-span-2;
 }
 
 .tags {
@@ -24,15 +28,15 @@
 
 .links {
   @apply absolute bottom-0 left-0 right-0 z-10 w-full;
-  @apply flex items-center justify-between p-3 px-6 space-x-3 font-bold bg-gray-100 font-title;
+  @apply flex items-center justify-center p-3 px-6 space-x-3 font-bold bg-gray-100 font-title;
 }
 
 .links p {
-  @apply text-sm text-gray-700;
+  @apply text-sm text-center text-gray-700;
 }
 
 .links a {
-  @apply text-sm text-gray-700 hover:text-gray-900;
+  @apply text-sm text-center text-indigo-700 hover:text-indigo-900;
 }
 
 .typography {
